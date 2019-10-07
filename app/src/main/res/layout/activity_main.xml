@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/username_editText_regestration"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_corners"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_editText_regestration"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_corners"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/username_editText_regestration"
+        app:layout_constraintStart_toStartOf="@+id/username_editText_regestration"
+        app:layout_constraintTop_toBottomOf="@+id/username_editText_regestration" />
+
+    <EditText
+        android:id="@+id/password_editText_regestration"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_corners"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/email_editText_regestration"
+        app:layout_constraintStart_toStartOf="@+id/email_editText_regestration"
+        app:layout_constraintTop_toBottomOf="@+id/email_editText_regestration" />
+
+    <Button
+        android:id="@+id/regestration_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_corners_button"
+        android:text="Regester"
+        app:layout_constraintEnd_toEndOf="@+id/password_editText_regestration"
+        app:layout_constraintStart_toStartOf="@+id/password_editText_regestration"
+        app:layout_constraintTop_toBottomOf="@+id/password_editText_regestration" />
+
+    <TextView
+        android:id="@+id/already_have_an_account_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Already have an account?"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/regestration_button"
+        app:layout_constraintStart_toStartOf="@+id/regestration_button"
+        app:layout_constraintTop_toBottomOf="@+id/regestration_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
